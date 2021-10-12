@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+section.profile, section.home, section.edit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.Home, .Profile, .Edit {
+	color:  black;
+	background: #150019;
+	position: relative;
+	/*bottom: 200px;*/
+	padding: 50px;
+	width: 500px;
+	min-height: 100px;
+	display: block;
+	text-align: center;
+	background: rgba(255,255,255,.1);
+	border-radius: 6px;
+	box-shadow: 0 5px 35px rgba(0,0,0,.2);
+}
+
+.Home, .Profile {
+	/*bottom: 200px;*/
+}
+.Home h1, .Profile h1, .Edit h1 {
+	margin-bottom: 10px;
+}
+
+.Profile ul {
+	list-style: none;
+	text-align: left;
+}
+
+.Profile span {
+	font-weight: 700;
+}
+
+.inputBx {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	/*bottom: 200px;*/
+}
+
+.inputBx input, textarea {
+	width: 100%;
+	outline: none;
+	border: 2px solid rgba(255,255,255,.3);
+	background: transparent;
+	padding: 12px 10px;
+	padding-left: 20px;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 18px;
+	box-shadow: inset 0 0 25px rgba(0,0,0,.2);
+}	
+
+.inputBx textarea {
+	height: 200px;
+}
+.inputBx input::placeholder, .inputBx textarea::placeholder {
+	color: #fff;
+}
+
+
+.inputBx input[type='submit'] {
+	max-width: 120px;
+	border: 2px solid #ea1d63;
+	background: none;
+	margin: 20px auto;
+	/*text-align: center;*/
+	/*padding: 14px 40px;*/
+	color: #fff;
+	border-radius: 24px;
+	transition: .25s;
+	cursor: pointer;
+}
+
+.inputBx input[type='submit']:hover {
+	background: #ea1d63;
+}
+
+.notice {
+	background-color: #0f0;
+	padding: 8px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: 600;
+}
