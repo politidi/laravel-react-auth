@@ -52,6 +52,7 @@ section.profile, section.home, section.edit {
 	width: 100%;
 	outline: none;
 	border: 2px solid rgba(255,255,255,.3);
+	border-top: none;
 	background: transparent;
 	padding: 12px 10px;
 	padding-left: 20px;
@@ -86,6 +87,20 @@ section.profile, section.home, section.edit {
 	background: #ea1d63;
 }
 
+.inputBx span {
+	position: absolute;
+	left: 20px;
+	padding: 4px 0;
+	font-size: 18px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: .5s;
+	color: #fff;
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
 .notice {
 	background-color: #0f0;
 	padding: 8px;
@@ -94,3 +109,4 @@ section.profile, section.home, section.edit {
 	text-align: center;
 	font-weight: 600;
 }
+

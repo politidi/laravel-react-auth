@@ -67,34 +67,40 @@ const Edit = (props) => {
 
 	if(localStorage.getItem('token')){
 		edit = (
+			<div className="contactForm">
 			<form onSubmit={UserEdit}>
 				{notice}
 				<div className="inputBx">
 					<input type="text" placeholder={name} name="name" 
 					onChange={handleFieldChange} 
-					 requried/>	
+					requried/>	
+					<span>Name</span>
 				</div>
 				<div className="inputBx">
 					<input type="text" placeholder="Email" name="email" 
-					value={email} disabled
-					/>	
+					value={email} disabled />
+					<span>Email</span>
 				</div>
 				<div className="inputBx">
 					<input type="text" placeholder={age} name="age" 
-					onChange={handleFieldChange} />	
+					onChange={handleFieldChange} />
+					<span>Age</span>	
 				</div>
 				<div className="inputBx">
 					<input type="text" placeholder={city} name="city" 
 					onChange={handleFieldChange} />	
+					<span>City</span>
 				</div>
 				<div className="inputBx">
 					<textarea placeholder={about} name="about" 
-					onChange={handleFieldChange}></textarea>	
+					onChange={handleFieldChange}></textarea>
+					<span>About me</span>	
 				</div>
 				<div className="inputBx">
 					<input type="submit" value="Update"/>
 				</div>
 			</form>
+			</div>
 		)
 	} else {
 		edit = (
