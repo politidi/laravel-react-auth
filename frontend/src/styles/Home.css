@@ -66,7 +66,7 @@ section.profile, section.home, section.edit {
 	height: 200px;
 }
 .inputBx input::placeholder, .inputBx textarea::placeholder {
-	color: #fff;
+	/*color: #fff;*/
 }
 
 

@@ -55,14 +55,6 @@ const Edit = (props) => {
 		);
 	}
 
-	if (props.user) {
-		name = props.user.name;
-		email = props.user.email;
-		age = props.user.age;
-		city = props.user.city;
-		about = props.user.about;
-	}
-
 	let edit;
 
 	if(localStorage.getItem('token')){
@@ -71,28 +63,32 @@ const Edit = (props) => {
 			<form onSubmit={UserEdit}>
 				{notice}
 				<div className="inputBx">
-					<input type="text" placeholder={name} name="name" 
+					<input type="text" placeholder="Enter name" name="name" 
+					value={fields.name}
 					onChange={handleFieldChange} 
 					requried/>	
 					<span>Name</span>
 				</div>
 				<div className="inputBx">
 					<input type="text" placeholder="Email" name="email" 
-					value={email} disabled />
+					value={fields.email} disabled />
 					<span>Email</span>
 				</div>
 				<div className="inputBx">
-					<input type="text" placeholder={age} name="age" 
+					<input type="text" placeholder="Enter age" name="age" 
+					value={fields.age}
 					onChange={handleFieldChange} />
 					<span>Age</span>	
 				</div>
 				<div className="inputBx">
-					<input type="text" placeholder={city} name="city" 
+					<input type="text" placeholder="Enter city" name="city" 
+					value={fields.city}
 					onChange={handleFieldChange} />	
 					<span>City</span>
 				</div>
 				<div className="inputBx">
-					<textarea placeholder={about} name="about" 
+					<textarea placeholder="Enter about you" name="about" 
+					value={fields.about}
 					onChange={handleFieldChange}></textarea>
 					<span>About me</span>	
 				</div>

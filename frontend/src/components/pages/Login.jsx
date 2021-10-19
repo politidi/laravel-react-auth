@@ -80,18 +80,18 @@ const Login = (props) => {
 				<form onSubmit={UserLogin}>
 					{error}
 					<div className="inputBx">
-						<input type="email" placeholder="Username or email" name='email' required 
+						<input tabindex="1" type="email" placeholder="Username or email" name='email' required 
 						onChange={handleFieldChange}/>
 						<img src={img_user} alt="" />
 					</div>
 					<div className="inputBx">
-						<input type="password" placeholder="Password" name='password' required 
+						<input tabindex="2" type="password" placeholder="Password" name='password' required 
 						onChange={handleFieldChange}/>
 						<img src={img_lock} alt="" />
 					</div>
-					<label className="remember"><input type="checkbox" />Remember Me</label>
+					<label  tabindex="3" className="remember"><input type="checkbox" />Remember Me</label>
 					<div className="inputBx">
-						<input type="submit" value="Login" />
+						<input tabindex="4" type="submit" value="Login" />
 					</div>
 				</form>
 				<p>Forgot <Link to="/forgotPassword">password</Link></p>
